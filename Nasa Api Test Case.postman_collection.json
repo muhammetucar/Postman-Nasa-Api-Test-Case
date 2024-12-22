@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "4497bfc7-0fb4-4f69-b070-e06fda8249ab",
+		"name": "Udemy - Nasa Api Test Case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40527448"
+	},
+	"item": [
+		{
+			"name": "getAPOD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?api_key=1N5DyFYzicrmkFP4OfkdVly9cgA214PYyZDJpYZc",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "1N5DyFYzicrmkFP4OfkdVly9cgA214PYyZDJpYZc"
+						},
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getNeoWS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/neo/rest/v1/feed?start_date=2024-12-13&end_date=2024-12-20&api_key=1N5DyFYzicrmkFP4OfkdVly9cgA214PYyZDJpYZc",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"neo",
+						"rest",
+						"v1",
+						"feed"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2024-12-13"
+						},
+						{
+							"key": "end_date",
+							"value": "2024-12-20"
+						},
+						{
+							"key": "api_key",
+							"value": "1N5DyFYzicrmkFP4OfkdVly9cgA214PYyZDJpYZc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEpic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/EPIC/api/natural/images?api_key=1N5DyFYzicrmkFP4OfkdVly9cgA214PYyZDJpYZc",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"EPIC",
+						"api",
+						"natural",
+						"images"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "1N5DyFYzicrmkFP4OfkdVly9cgA214PYyZDJpYZc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEpicImage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/EPIC/archive/natural/{{year}}/{{month}}/{{day}}/png/epic_1b_20241218001751.png?api_key=1N5DyFYzicrmkFP4OfkdVly9cgA214PYyZDJpYZc",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"EPIC",
+						"archive",
+						"natural",
+						"{{year}}",
+						"{{month}}",
+						"{{day}}",
+						"png",
+						"epic_1b_20241218001751.png"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "1N5DyFYzicrmkFP4OfkdVly9cgA214PYyZDJpYZc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
